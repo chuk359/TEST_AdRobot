@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Интерактивный график для четырёх time-series: area, spline, line и bar." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231b1b1f'/%3E%3Cpath d='M5 23l7-8 5 3 10-11' fill='none' stroke='%238b37dd' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <title>Four-series chart</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="demo" aria-labelledby="demo-title">
+        <header class="demo__header">
+          <div>
+            <p class="eyebrow">Performance overview</p>
+            <h1 id="demo-title">Daily metrics</h1>
+          </div>
+          <div class="period" aria-label="Выбранный период">
+            <span>10–14 июня</span>
+            <span class="period__year">2026</span>
+          </div>
+        </header>
+
+        <div id="chart" class="chart-host"></div>
+
+        <div class="legend" aria-label="Легенда графика">
+          <span><i style="--color: #f7df57"></i>Cost</span>
+          <span><i style="--color: #536ce8"></i>CPA</span>
+          <span><i style="--color: #478c2f"></i>ROI confirmed</span>
+          <span><i style="--color: #8b37dd"></i>Conversions</span>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/demo.js"></script>
+  </body>
+</html>
